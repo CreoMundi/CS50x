@@ -21,11 +21,11 @@ int main(void)
     int years = 0;
     while (start < end) {
         start = start + start/3 - start/4;
-        printf("Current year: %i\n", years);
+        // printf("Current year: %i\n", years);
         years++;
-        printf("Current llamas: %i\n", start);
+        // printf("Current llamas: %i\n", start);
     }
 
     // Print number of years
-    printf("You'll need %i years to achieve this goal.\n", years);
+    printf("Years: %i", years);
 }
