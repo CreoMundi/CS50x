@@ -31,9 +31,10 @@ int main(void) {
         }
 
         //for a second row of blanks
-        for (int m=height-i; m>1; m--) {
-            printf(" ");
-        }
+        
+//        for (int m=height-i; m>1; m--) {
+//            printf(" ");
+//        }
 
         printf("\n");
     }
