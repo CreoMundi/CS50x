@@ -26,15 +26,9 @@ int main(void) {
         printf("  ");
 
         //for a second row of blocks
-        for(int l=0; l<=i; l++) {
+        for (int l=0; l<=i; l++) {
             printf("#");
         }
-
-        //for a second row of blanks
-        
-//        for (int m=height-i; m>1; m--) {
-//            printf(" ");
-//        }
 
         printf("\n");
     }
