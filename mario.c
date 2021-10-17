@@ -9,12 +9,12 @@ int main(void) {
     while (height<1 || height>8){
         height = get_int("Height: ");
     }
-    
+
     //loop for a single line, repeated "height" times
     for (int i=0; i<height; i++) {
 
         //for a first row of blanks
-        for (int j=height-i; j>0; j--) {
+        for (int j=height-i; j>1; j--) {
             printf(" ");
         }
 
@@ -31,7 +31,7 @@ int main(void) {
         }
 
         //for a second row of blanks
-        for (int m=height-i; m>0; m--) {
+        for (int m=height-i; m>1; m--) {
             printf(" ");
         }
 
