@@ -89,7 +89,7 @@ int main(void)
 void invalid (void)
 {
     printf ("INVALID\n");
-    exit(1);
+    exit(0);
 }
 
 
