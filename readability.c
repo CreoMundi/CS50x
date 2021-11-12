@@ -18,8 +18,8 @@ int main(void)
     
     float avg_l = letters * 100.0 / words;
     float avg_s = sentences * 100.0 / words;
-    float index = 0.0588 * avg_l - 0.296 * avg_s - 15.8;
-    int index_i = round(index);
+    int index = round(0.0588 * avg_l - 0.296 * avg_s - 15.8);
+
 
     if (index < 1)
     {
