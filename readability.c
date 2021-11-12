@@ -18,19 +18,19 @@ int main(void)
     
     float avg_l = letters * 100 / words;
     float avg_s = sentences * 100 / words;
-    int index = round(0.0588 * avg_l - 0.296 * avg_s - 15.8);
+    double index = round(0.0588 * avg_l - 0.296 * avg_s - 15.8);
 
     if (index < 1)
     {
-        printf("\nBefore grade 1\n");
+        printf("Before grade 1\n");
     }
     else if (index > 16)
     {
-        printf("\nGrade 16+\n");
+        printf("Grade 16+\n");
     }
     else
     {
-        printf("\nGrade %i\n", index);
+        printf("Grade %i\n", (int) index);
     }
 }
 
