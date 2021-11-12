@@ -16,8 +16,8 @@ int main(void)
     int words = word_count(text);
     int sentences = sentence_count(text);
     
-    float avg_l = letters * 100.0 / words;
-    float avg_s = sentences * 100. / words;
+    float avg_l = letters * 100 / words;
+    float avg_s = sentences * 100 / words;
     long double index = 0.0588 * avg_l - 0.296 * avg_s - 15.8;
     int index_i = round(index);
 
