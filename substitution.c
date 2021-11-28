@@ -19,6 +19,21 @@ int main(int argc, string argv[])
         return 1;
     }
     
+    for (int i = 0; i < 26; i++)
+    {
+        char c = tolower(key[i]);
+        
+        for (int j = 0; j <= i; j++)
+        {
+            char cnd = tolower(key[j]);
+            if (cnd == c)
+            {
+                printf("Usage: ./substitution KEY\n");
+                return 1;
+            }
+        }    
+    }
+    
 //get text & create empty string for storing the output text
     string text = get_string("plaintext: ");
 
