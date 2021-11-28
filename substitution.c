@@ -22,13 +22,13 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < 26; i++)
     {
-/*        //check the input key for invalid characters
-        if ((!islower(key[i])) || (!isupper(key[i])))
+        //check the input key for invalid characters
+        if ((!islower(key[i])) && (!isupper(key[i])))
         {
             printf("Usage: ./substitution KEY\n");
             return 1;
         }
-*/        
+
         //check the input key for multiple characters
         char c = tolower(key[i]);
         int count = 0;
