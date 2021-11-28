@@ -22,14 +22,19 @@ int main(int argc, string argv[])
     for (int i = 0; i < 26; i++)
     {
         char c = tolower(key[i]);
+        int count = 0;
         
         for (int j = 0; j <= i; j++)
         {
             char cnd = tolower(key[j]);
             if (cnd == c)
             {
-                printf("Usage: ./substitution KEY\n");
-                return 1;
+                count++;
+                if (count > 1)
+                {
+                    printf("Usage: ./substitution KEY nested\n");
+                    return 1;
+                }
             }
         }    
     }
