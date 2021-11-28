@@ -32,7 +32,7 @@ int main(int argc, string argv[])
                 count++;
                 if (count > 1)
                 {
-                    printf("Usage: ./substitution KEY nested\n");
+                    printf("Usage: ./substitution KEY\n");
                     return 1;
                 }
             }
