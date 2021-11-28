@@ -20,7 +20,7 @@ int main(int argc, string argv[])
     }
     
 //get text & create empty string for storing the output text
-    string text = get_string("Plaintext: ");
+    string text = get_string("plaintext: ");
 
 
 //substitute
@@ -39,7 +39,7 @@ int main(int argc, string argv[])
         }
     }
 
-    printf("Cyphertext: %s\n", text);
+    printf("ciphertext: %s\n", text);
     
     return 0;
 }
