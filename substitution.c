@@ -7,20 +7,29 @@ int main(int argc, string argv[])
 {
     string key = argv[1];
 
-//check the input key for validity
+//check the input key for spaces
     if (argc != 2)
     {
         printf("Usage: ./substitution KEY\n");
         return 1;
     }
+//check the input key for lenght
     else if (strlen(key) != 26)
     {
         printf("Key must contain 26 letters.\n");
         return 1;
     }
-    
+
     for (int i = 0; i < 26; i++)
     {
+        //check the input key for invalid characters
+        if ((!islower(key[i])) || (!isupper(key[i])))
+        {
+            printf("Usage: ./substitution KEY\n");
+            return 1;
+        }
+        
+        //check the input key for multiple characters
         char c = tolower(key[i]);
         int count = 0;
         
@@ -36,7 +45,7 @@ int main(int argc, string argv[])
                     return 1;
                 }
             }
-        }    
+        }
     }
     
 //get text & create empty string for storing the output text
