@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: It does rather bad with random lists, but goes through sorted lists the quickest. That is possible thanks to bubble sort's initially checked condition i.e. if any two adjacent elements are on their places before actually reaching to change their order.
+
+sort2 uses: merge sort
+
+How do you know?: It's the quickest with random lists.
+
+sort3 uses: selection sort
+
+How do you know?: It has quite a similar run time no matter the type of list. That is due to the fact that with every comparison it has to go through the whole list, no matter it's "sort level".
